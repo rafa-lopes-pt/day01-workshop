@@ -1,0 +1,47 @@
+.input-container {
+    // background-color: green;
+    display: flex;
+    flex-direction: column;
+    place-content: center;
+    place-items: center;
+
+    width: 53vw;
+    padding: 2em;
+    border-radius: 15px;
+
+    &__title {
+
+        font-size: 1.5rem;
+        margin: 0.5rem;
+    }
+
+    &__inputs {
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    &__span {
+        display: flex;
+        justify-content: space-evenly;
+        margin: 1rem;
+    }
+
+    &__input {
+        margin-right: 1rem;
+
+        &--valid {
+            background-color: yellowgreen;
+        }
+
+        &--invalid {
+            background-color: red;
+        }
+    }
+    &__btn {
+        &--add {
+        }
+        &--generate {
+        }
+    }
+}

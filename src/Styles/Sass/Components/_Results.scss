@@ -1,0 +1,27 @@
+@use "../base/theme";
+
+.results {
+    @include theme.primary-container;
+    display: flex;
+    place-content: space-evenly;
+    place-items: center;
+    height: 20svh;
+    padding: 1rem;
+    width: 66vw;
+    
+
+    &__card {
+        @include theme.secondary-container;
+        display: flex;
+        flex-direction: column;
+        place-content: center;
+        place-items: center;
+        padding: 1.5rem;
+        &__value {
+            font-size: 1.8rem;
+        }
+        &__descp {
+            font-size: 1.25rem;
+        }
+    }
+}

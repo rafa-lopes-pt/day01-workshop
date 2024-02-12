@@ -1,0 +1,44 @@
+@use "./theme";
+
+html,
+:root,
+body {
+    height: 100svh;
+}
+* {
+    user-select: none;
+}
+
+#root {
+    background-color: map-get($map: theme.$colors, $key: "c1");
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: map-get($map: theme.$colors, $key: "c5");
+
+    // height: calc(100svh - 2rem);
+}
+
+nav {
+    @include theme.primary-container;
+    padding: 1.5rem 2rem;
+    height: 10svh;
+    margin-top: 1svh;
+    margin-bottom: 3svh;
+}
+
+main {
+    background-color: map-get($map: theme.$colors, $key: "c2");
+    height: 84svh;
+    width: 95vw;
+    padding: 1rem;
+    box-shadow: inset 0px 0px 10px 0px map-get($map: theme.$colors, $key: "c5");
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.input-container {
+    @include theme.primary-container;
+}

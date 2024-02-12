@@ -1,0 +1,136 @@
+html,
+:root,
+body {
+  height: 100svh;
+}
+
+* {
+  user-select: none;
+}
+
+#root {
+  background-color: #f6f9ff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #222;
+}
+
+nav {
+  background-color: #c2ccba;
+  border-radius: 15px;
+  border: 4px solid #f6f9ff;
+  box-shadow: inset 2px 2px 15px 5px #5e675a;
+  padding: 1.5rem 2rem;
+  height: 10svh;
+  margin-top: 1svh;
+  margin-bottom: 3svh;
+}
+
+main {
+  background-color: #bec2c8;
+  height: 84svh;
+  width: 95vw;
+  padding: 1rem;
+  box-shadow: inset 0px 0px 10px 0px #222;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.input-container {
+  background-color: #c2ccba;
+  border-radius: 15px;
+  border: 4px solid #f6f9ff;
+  box-shadow: inset 2px 2px 15px 5px #5e675a;
+}
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+  place-content: center;
+  place-items: center;
+  width: 53vw;
+  padding: 2em;
+  border-radius: 15px;
+}
+.input-container__title {
+  font-size: 1.5rem;
+  margin: 0.5rem;
+}
+.input-container__inputs {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+.input-container__span {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 1rem;
+}
+.input-container__input {
+  margin-right: 1rem;
+}
+.input-container__input--valid {
+  background-color: yellowgreen;
+}
+.input-container__input--invalid {
+  background-color: red;
+}
+.list-display {
+  background-color: #c2ccba;
+  border-radius: 15px;
+  border: 4px solid #f6f9ff;
+  box-shadow: inset 2px 2px 15px 5px #5e675a;
+  display: flex;
+  margin: 0.5rem;
+  padding: 3rem;
+  width: 90vw;
+  overflow: auto;
+}
+.list-display__item {
+  background-color: #5e675a;
+  border-radius: 15px;
+  box-shadow: inset 2px 2px 15px 5px #5e675a;
+  font-size: 2rem;
+  text-align: center;
+  min-width: 6rem;
+  min-height: 3rem;
+  width: fit-content;
+  padding: 0.25rem;
+  margin: 0.5rem;
+  cursor: pointer;
+}
+
+.results {
+  background-color: #c2ccba;
+  border-radius: 15px;
+  border: 4px solid #f6f9ff;
+  box-shadow: inset 2px 2px 15px 5px #5e675a;
+  display: flex;
+  place-content: space-evenly;
+  place-items: center;
+  height: 20svh;
+  padding: 1rem;
+  width: 66vw;
+}
+.results__card {
+  background-color: #5e675a;
+  border-radius: 15px;
+  box-shadow: inset 2px 2px 15px 5px #5e675a;
+  display: flex;
+  flex-direction: column;
+  place-content: center;
+  place-items: center;
+  padding: 1.5rem;
+}
+.results__card__value {
+  font-size: 1.8rem;
+}
+.results__card__descp {
+  font-size: 1.25rem;
+}
+
+/*# sourceMappingURL=sass-main.css.map */

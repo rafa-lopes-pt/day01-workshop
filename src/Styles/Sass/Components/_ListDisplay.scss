@@ -1,0 +1,21 @@
+@use "../base/theme";
+.list-display {
+    @include theme.primary-container;
+    display: flex;
+    margin: 0.5rem;
+    padding: 3rem;
+    width: 90vw;
+    overflow: auto;
+
+    &__item {
+        @include theme.secondary-container;
+        font-size: 2rem;
+        text-align: center;
+        min-width: 6rem;
+        min-height: 3rem;
+        width: fit-content;
+        padding: 0.25rem;
+        margin: 0.5rem;
+        cursor: pointer;
+    }
+}
