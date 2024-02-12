@@ -1,12 +1,9 @@
-import React from "react";
 
 export default function Results({ list }: { list: number[] }) {
     let highest: number | string = Math.max(...list),
         lowest: number | string = Math.min(...list),
         difference: number | string = 0;
-    const validateNumbers = (n: any) => {
-        return n instanceof Number;
-    };
+
     if (!isFinite(highest) || !isFinite(lowest)) {
         highest = "-";
         lowest = "-";

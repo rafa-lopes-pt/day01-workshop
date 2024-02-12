@@ -1,9 +1,8 @@
 import React, {
-    RefObject,
-    useRef,
-    useState,
     forwardRef,
     useImperativeHandle,
+    useRef,
+    useState
 } from "react";
 import {
     VALIDATE_CSV_NUMBERS_ONLY,
